@@ -15,13 +15,15 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             //YOUR CODE HERE
-
+            string inputStr = Console.ReadLine();
+            double inputDb1 = Convert.ToDouble(inputStr);
+            Console.WriteLine(ConvertToFahrenheit(inputDb1));
         }
 
         public static double ConvertToFahrenheit(double c)
         {
             //YOUR CODE HERE - convert celcius to fahrenheit
-            return 0;
+            return 1.8*c+32.0;
 
         }
     }

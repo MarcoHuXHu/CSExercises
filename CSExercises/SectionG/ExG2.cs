@@ -32,11 +32,15 @@ namespace CSExercises
         public static bool IsPalindrome(string phrase)
         {
             //YOUR CODE HERE
-            return false;
-
-
-
-
+            string Uppphrase = phrase.ToUpper();
+            string str = "";
+            for (int i = 0; i < Uppphrase.Length; i++)
+                if ((Uppphrase[i] >= 'A') && (Uppphrase[i] <= 'Z'))
+                    str += Uppphrase[i];
+            int l = str.Length;
+            for (int i = 0; (i < l / 2); i++)
+                if (str[i] != str[l - i - 1]) return false;
+            return true;
         }
     }
 }

@@ -42,11 +42,24 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             //YOUR CODE HERE
-
-
-
-
-
+            int[] count = new int[10];
+            Random ran = new Random();
+            for (int i = 0; i < 50; i++)
+            {
+                int r = ran.Next(0, 10);
+                count[r]++;
+            }
+            Console.WriteLine("{0}\t{1}", "Number", "Count");
+            for (int i = 0; i < 10; i++)
+                Console.WriteLine("{0}\t{1}", i, count[i]);
+            Console.WriteLine("Number");
+            for (int i = 0; i < 10; i++)
+            {
+                Console.Write("{0}\t", i);
+                for (int j = 0; j < count[i]; j++)
+                    Console.Write("*");
+                Console.WriteLine();
+            }
         }
     }
 }

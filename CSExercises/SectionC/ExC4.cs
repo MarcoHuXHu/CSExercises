@@ -22,18 +22,21 @@ namespace CSExercises
         {
 
             //Your code here
-
-
+            double distance = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(CalculateFare(distance));
 
         }
 
         public static double CalculateFare(double distance)
         {
             //YOUR CODE HERE
-            return 0;
-
-
-
+            double cost = 2.4;
+            if (distance > 0.5)
+                if (distance < 9)
+                    cost = 2.4 + (distance - 0.5) * 0.4;
+                else
+                    cost = 2.4 + 8.5 * 0.4 + (distance - 9) * 0.5;
+            return Math.Round(cost,1);
         }
     }
 }

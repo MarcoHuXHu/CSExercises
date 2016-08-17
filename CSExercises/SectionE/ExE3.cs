@@ -34,9 +34,10 @@ namespace CSExercises
         public static bool IsPrime(int n)
         {
             //YOUR CODE HERE
-            return false;
-
-
+            int sqtn = Convert.ToInt32(Math.Sqrt(n));
+            for (int i = 2; i <= sqtn; i++)
+                if (n % i == 0) return false;
+            return true;
         }
     }
 }

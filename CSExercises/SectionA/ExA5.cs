@@ -22,7 +22,7 @@ namespace CSExercises
         {
             string inputStr = Console.ReadLine();
             double inputDbl = Convert.ToDouble(inputStr);
-
+            Console.WriteLine("{0:0.00}",inputDbl);
             //YOUR CODE HERE
 
         }

@@ -17,12 +17,15 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             //YOUR CODE HERE
+            string inputStr = Console.ReadLine();
+            double inputDb1 = Convert.ToDouble(inputStr);
+            Console.WriteLine(CalculateY(inputDb1));
         }
 
         public static double CalculateY(double x)
         {
             //YOUR CODE HERE
-            return 0;
+            return 2.0*x*x-4.0*x+3.0;
         }
     }
 }

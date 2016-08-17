@@ -1,4 +1,5 @@
 ﻿using System;
+using CSExercises;
 
 namespace CSExercises
 {
@@ -24,10 +25,33 @@ namespace CSExercises
         {
             Console.Write("Enter the amount: ");
             double amount = Convert.ToDouble(Console.ReadLine());
-
+            if ((amount < 0) || (amount > 3.5)) return ;
             //YOUR CODE HERE
-
-
+            int num = Convert.ToInt32(amount * 100);
+            int[] coins = { 5, 10, 20, 50, 100 };
+            int[]  f = new int[500];
+            int[,] g = new int[500, 5];
+            //initialization
+            f[5] = 1; g[5, 0] = 1;
+            f[10] = 1; g[10, 1] = 1;
+            f[20] = 1; g[20, 2] = 1;
+            f[50] = 1; g[50, 3] = 1;
+            f[100] = 1; g[100, 4] = 1;
+            //search
+            for (int i = 0; i < num; i = i + 5)
+                if (f[i]>0)
+                    for (int j = 0; j < 5; j++)
+                        if ((f[i + coins[j]] == 0) || (f[i + coins[j]] > f[i] + 1))
+                        {
+                            f[i + coins[j]] = f[i] + 1;
+                            for (int k = 0; k < 5; k++)
+                                g[i + coins[j], k] = g[i, k];
+                            g[i + coins[j], j] = g[i, j] + 1;
+                        }
+            //Console.WriteLine(f[num]);
+            for (int i = 0; i < 5; i++)
+                for (int j = 0; j < g[num, i]; j++)
+                    Console.WriteLine("{0}c", coins[i]);
         }
     }
 }

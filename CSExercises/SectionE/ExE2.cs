@@ -23,6 +23,13 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             //YOUR CODE HERE
+            for (int i=1; i<=10; i++)
+            {
+                double inverse = 1.0 / i;
+                double st = Math.Sqrt(i);
+                double sq = i * i;
+                Console.WriteLine("{0:0.0##}\t{1:0.0##}\t{2:0.0##}\t{3:0.0}\t",i,inverse,st,sq);
+            }
         }
     }
 }

@@ -8,4 +8,3 @@ D:\CSExercises\CSExercises\bin\Debug\CSExercises.exe
 D:\CSExercises\CSExercises\bin\Debug\CSExercises.pdb
 D:\CSExercises\CSExercises\obj\Debug\CSExercises.exe
 D:\CSExercises\CSExercises\obj\Debug\CSExercises.pdb
-D:\CSExercises\CSExercises\obj\Debug\CSExercises.csprojResolveAssemblyReference.cache

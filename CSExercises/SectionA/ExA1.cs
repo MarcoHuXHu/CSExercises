@@ -20,6 +20,8 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             //YOUR CODE HERE
+            Console.WriteLine("Marco");
+            Console.WriteLine("E0046634@u.nus.edu");
         }
     }
 }

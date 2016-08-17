@@ -17,12 +17,24 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             //YOUR CODE HERE
+            double x1, x2, y1, y2;
+            string str;
+            str = Console.ReadLine();
+            x1 = Convert.ToDouble(str);
+            str = Console.ReadLine();
+            y1 = Convert.ToDouble(str);
+            str = Console.ReadLine();
+            x2 = Convert.ToDouble(str);
+            str = Console.ReadLine();
+            y2 = Convert.ToDouble(str);
+            Console.WriteLine(CalculateDistance(x1, y1, x2, y2));
         }
 
         public static double CalculateDistance(double x1, double y1, double x2, double y2)
         {
             //YOUR CODE HERE
-            return 0;
+            double result = Math.Sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+            return Math.Sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
         }
     }
 }
