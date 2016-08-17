@@ -1,0 +1,13 @@
+Z:\CSExercises\CSExercises\ExercisesTest\bin\Release\ExercisesTest.dll
+Z:\CSExercises\CSExercises\ExercisesTest\bin\Release\ExercisesTest.pdb
+Z:\CSExercises\CSExercises\ExercisesTest\bin\Release\CSExercises.exe
+Z:\CSExercises\CSExercises\ExercisesTest\bin\Release\CSExercises.pdb
+Z:\CSExercises\CSExercises\ExercisesTest\obj\Release\ExercisesTest.csprojResolveAssemblyReference.cache
+Z:\CSExercises\CSExercises\ExercisesTest\obj\Release\ExercisesTest.dll
+Z:\CSExercises\CSExercises\ExercisesTest\obj\Release\ExercisesTest.pdb
+D:\CSExercises\ExercisesTest\bin\Release\ExercisesTest.dll
+D:\CSExercises\ExercisesTest\bin\Release\ExercisesTest.pdb
+D:\CSExercises\ExercisesTest\bin\Release\CSExercises.exe
+D:\CSExercises\ExercisesTest\bin\Release\CSExercises.pdb
+D:\CSExercises\ExercisesTest\obj\Release\ExercisesTest.dll
+D:\CSExercises\ExercisesTest\obj\Release\ExercisesTest.pdb
