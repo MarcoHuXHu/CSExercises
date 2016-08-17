@@ -23,20 +23,31 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             int[] sales = new int[12];
+            int max = -2147483647;
+            int min = -max;
+            int maxm = -1; int minm = -1;
+            double avg = 0;
             for (int n = 0; n < 12; n++)
             {
                 Console.Write("Enter sales for month {0}: " , n);
                 sales[n] = Convert.ToInt32(Console.ReadLine());
+                avg = avg + sales[n];
+                if (sales[n]>max)
+                {
+                    max = sales[n];
+                    maxm = n;
+                }
+                if (sales[n] < min)
+                {
+                    min = sales[n];
+                    minm = n;
+                }
             }
+            avg = avg / 12.0;
+//            CalculateMinMaxAvg(sales, ref min, ref max, ref avg);
 
-            int max = 0;
-            int min = 0;
-            double avg = 0;
-
-            CalculateMinMaxAvg(sales, ref min, ref max, ref avg);
-
-            Console.WriteLine("Maximum Sales: " + max);
-            Console.WriteLine("Minimum Sales: " + min);
+            Console.WriteLine("Maximum Sales: " + maxm);
+            Console.WriteLine("Minimum Sales: " + minm);
             Console.WriteLine("Average Sales: " + avg);
         }
 
@@ -44,31 +55,24 @@ namespace CSExercises
         {
             //YOUR CODE HERE
             //Assign the result to minMonth, maxMonth and avg variable/parameter accordingly
-
-
         }
 
         public static int CalculateMinMonth(int[] sales)
         {
             //YOUR CODE HERE
             return 0;
-
         }
 
         public static int CalculateMaxMonth(int[] sales)
         {
             //YOUR CODE HERE
             return 0;
-
-
-
         }
 
         public static double CalculateAvgSales(int[] sales)
         {
             //YOUR CODE HERE
             return 0;
-
         }
 
 

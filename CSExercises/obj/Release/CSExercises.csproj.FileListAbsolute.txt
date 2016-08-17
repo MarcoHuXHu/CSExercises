@@ -1,0 +1,5 @@
+Z:\CSExercises\CSExercises\CSExercises\bin\Release\CSExercises.exe.config
+Z:\CSExercises\CSExercises\CSExercises\bin\Release\CSExercises.exe
+Z:\CSExercises\CSExercises\CSExercises\bin\Release\CSExercises.pdb
+Z:\CSExercises\CSExercises\CSExercises\obj\Release\CSExercises.exe
+Z:\CSExercises\CSExercises\CSExercises\obj\Release\CSExercises.pdb
